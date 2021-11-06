@@ -12,6 +12,123 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+/*Home*/
+#Home{
+    background: #353246;
+    height: 100vh;
+}
+#Home iframe{
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 2rem;
+    position: absolute;
+    border: 2px solid #04F983;
+}
+.container-home{
+    height: 100vh;
+    display: flex;
+}
+.conteudo-home{
+   width: 40%;
+   margin-top: 14%;
+   margin-left: 10%;
+   z-index: 100;
+}
+.conteudo-home h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 80px;
+    letter-spacing: -0.015em;
+    color: var(--color-secundary);
+}
+.conteudo-home .ver-agora{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    background: var(--color-primary);
+    border-radius: 20px;
+    width: 60%;
+    margin-top: var(--mg-top);
+    transition: .1s ease-out;
+    -webkit-transition: .1s ease-out;
+    -moz-transition: .1s ease-out;
+    -ms-transition: .1s ease-out;
+    -o-transition: .1s ease-out;
+    cursor: pointer;
+}
+.conteudo-home .ver-agora:hover{
+    background: var(--color-red);
+    cursor: pointer;
+    transition: .1s ease-in;
+    -webkit-transition: .1s ease-in;
+    -moz-transition: .1s ease-in;
+    -ms-transition: .1s ease-in;
+    -o-transition: .1s ease-in;
+}
+
+/*Canais - grid*/
+#Canais h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: var(--color-secundary);
+}
+.grid-canais{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.content-grid{
+    height: 14rem;
+    width: 30%;
+    background: #353246;
+    transition: .3s ease-out;
+}
+.content-grid img{
+    width: 70%;
+    height: 75%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 7%;
+    opacity: 0.4;
+    transition: .3s ease-out;
+}
+.content-grid:hover{
+    background: #04F983;
+    transition: .3s ease-in;
+}
+.content-grid img:hover{
+    opacity: 1;
+    transition: .3s ease-in;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+}
+#Canais p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 40px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    text-align: center;
+    margin-top: var(--mg-top);
+    margin-bottom: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
 /*Sessão Sobre Nos*/
 #SobreNos h1{
     font-style: normal;
@@ -63,6 +180,7 @@
     color: #000000;
     margin-top: .5rem;
 }
+
 /*Sessão Cards*/
 #Cards{
     display: flex;
@@ -82,12 +200,8 @@ body h1{
     width: 30%;
     margin: 1.5rem;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
     background: #FFFFFF;
     border: 2px solid #04F983;
     border-radius: 15px;
@@ -98,6 +212,7 @@ body h1{
     -moz-transition: .3s ease-in;
     -ms-transition: .3s ease-in;
     -o-transition: .3s ease-in;
+    padding-bottom: 2rem;
 }
 .card i{
     font-style: normal;
@@ -108,7 +223,7 @@ body h1{
     margin-top: var(--mg-top);
 }
 .card h2{
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     font-style: normal;
@@ -131,6 +246,7 @@ body h1{
     letter-spacing: -0.015em;
     margin-top: var(--mg-top);
 }
+
 /* Hover Card */
 .card:hover{
     background: var(--color-secundary);
@@ -170,6 +286,7 @@ body h1{
     -ms-transition: .1s ease-out;
     -o-transition: .1s ease-out;
 }
+
 /* Responsivo - Card */
 @media (max-width: 1100px) {
     #Cards{
@@ -186,10 +303,10 @@ body h1{
         width: 80%;
     }
 }
+
 /* Sessão Poster */
 #Poster{
     background: var(--color-secundary);
-    padding-bottom: 7rem;
 }
 #Poster h1{
     font-style: normal;
@@ -238,6 +355,7 @@ body h1{
     letter-spacing: -0.015em;
     margin-top: 2rem;
 }
+
 /* Responsivo - Poster */
 @media (max-width: 1240px) {
     #Poster .container{
