@@ -83,24 +83,26 @@
     color: var(--color-secundary);
 }
 .grid-canais{
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
+    width: 90%;
+    margin: auto;
     justify-content: space-evenly;
 }
 .content-grid{
-    height: 14rem;
-    width: 30%;
+    margin-top: 2rem;
+    height: 24vh;
+    width: 25%;
     background: #353246;
     transition: .3s ease-out;
+    display: flex;
 }
 .content-grid img{
     width: 70%;
-    height: 75%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 7%;
     opacity: 0.4;
+    margin: auto;
     transition: .3s ease-out;
+
 }
 .content-grid:hover{
     background: #04F983;
